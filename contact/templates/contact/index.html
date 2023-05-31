@@ -2,6 +2,14 @@
 
 <html>
     <body>
-        <h1>Contact Form</h1>
+        <h1>Contact</h1>
+
+        <form method="post" action=".">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button>Submit</button>
+        </form>
     </body>
 </html>
