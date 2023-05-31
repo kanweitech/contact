@@ -5,4 +5,4 @@ from .forms import ContactForm
 def index(request):
     form = ContactForm()
 
-    return render(request, 'contact/index.html', 'form': form)
+    return render(request, 'contact/index.html', {'form':form})
