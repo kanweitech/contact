@@ -27,7 +27,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'djangoprojectinfo@gmail.com'
+EMAIL_HOST_PASSWORD = 'zdtdtpljfiqbgxhu'
+
+
+
+# MAILTRAP.IO EMAIL SETTINGS
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = '4ce0d4c01b277b'
+# EMAIL_HOST_PASSWORD = '6d9e869de9f5b6'
+# EMAIL_PORT = '2525'
 
 
 # Application definition
